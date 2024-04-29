@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../public/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/input.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="container mx-auto pt-4">
+    <!-- heading -->
+    <header class="pt-12">
+      <div class="flex justify-around">
+        <div class="text-3xl">Kaung Myat Kyaw</div>
+        <!-- for mobile -->
+        <div class="block lg:hidden relative" onclick="toggleMenu()">
+          <div
+            class="cursor-pointer text-3xl bars-icon transition-opacity delay-200 ease-in-out"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div
+            class="cursor-pointer text-3xl xmark-icon hidden transition-opacity delay-200 ease-in-out"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div
+            class="nav-menu absolute right-5 transition-opacity delay-200 ease-in-out list-none text-2xl rounded-xl bg-white text-black"
+            style="opacity: 0"
+          >
+            <li class="px-5"><a href="#about">About</a></li>
+            <li class="px-5"><a href="#experience">Experience</a></li>
+            <li class="px-5"><a href="#projects">Projects</a></li>
+            <li class="px-5"><a href="#contact">Contact</a></li>
+          </div>
+        </div>
+        <!-- for mobile -->
+
+        <div class="hidden lg:block">
+          <nav class="">
+            <ul class="flex">
+              <li class="px-5 text-2xl"><a href="#about">About</a></li>
+              <li class="px-5 text-2xl">
+                <a href="#experience">Experience</a>
+              </li>
+              <li class="px-5 text-2xl"><a href="#projects">Projects</a></li>
+              <li class="px-5 text-2xl"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <main class="pt-20 px-12 md:px-20 lg:flex lg:justify-center lg:gap-20">
+      <!-- image -->
+      <div class="flex justify-center my-6">
+        <img
+          src="./images/received_3190141107909029.jpeg"
+          alt="..."
+          class="w-auto h-[46vw] rounded-full md:w-[275px] md:h-[275px] xl:w-[400px] xl:h-auto"
+        />
+      </div>
+
+      <!-- article -->
+      <div class="flex justify-center">
+        <div class="flex justify-center items-center">
+          <div class="text-center">
+            <div class="text-gray-500 text-lg font-semibold my-2">
+              <span>Hello, I'm</span>
+            </div>
+            <div class="my-2 text-4xl font-bold">
+              <span>Kaung Myat Kyaw</span>
+            </div>
+            <div class="my-4 text-2xl text-gray-500 font-semibold">
+              <span>Full Stack Developer</span>
+            </div>
+            <div class="my-4 sm:flex sm:justify-between sm:gap-4">
+              <div
+                class="mt-3 px-4 font-bold py-4 outline outline-2 text-black outline-black rounded-full transition-all delay-300 ease-out hover:text-white hover:bg-black"
+              >
+                <a
+                  href="https://drive.google.com/file/d/1-62hRD0-2ti8v7-extcqyqVAcAr2oRST/view?usp=drive_link"
+                  target="_blank"
+                  class=""
+                  >Download CV</a
+                >
+              </div>
+              <div
+                class="mt-3 px-4 font-bold py-4 text-white bg-gray-700 rounded-full transition-all delay-300 ease-out hover:text-white hover:bg-black"
+              >
+                <a href="#contact" class="">Contact Info</a>
+              </div>
+            </div>
+            <div class="my-2 flex justify-center gap-3">
+              <div class="text-3xl hover:animate-pulse">
+                <a
+                  href="https://www.linkedin.com/in/kaungmyat-kyaw-766572228/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="text-3xl hover:animate-pulse">
+                <a href="https://github.com/inhibitor255" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="text-3xl hover:animate-pulse">
+                <a href="mailto:kaungmyatkyaw255@gmail.com" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+              <div class="text-3xl hover:animate-pulse">
+                <a href="tel:+959775117522" target="_blank">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- About me  -->
+    <section class="mt-7 pt-20 px-12" id="about">
+      <div class="text-center">
+        <div class="text-gray-600 font-semibold text-sm">
+          <span>Get to know more</span>
+        </div>
+        <div class="text-4xl font-bold text-black">
+          <span>About Me</span>
+        </div>
+      </div>
+      <div class="mt-16 px-7 lg:flex lg:justify-center lg:gap-8">
+        <div class="flex justify-center">
+          <img
+            src="./images/photo_2024-04-27_22-54-38.jpg"
+            alt=""
+            class="w-auto h-[46vw] rounded-[50px] md:w-[275px] md:h-[275px] xl:w-[500px] xl:h-auto"
+          />
+        </div>
+        <div class="px-4 py-4 lg:w-[50%]">
+          <div class="sm:flex sm:justify-between sm:items-center sm:gap-6">
+            <div
+              class="mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%]"
+            >
+              <div class="">
+                <div>
+                  <span class="text-2xl font-bold">
+                    <i class="fa-solid fa-medal"></i>
+                  </span>
+                </div>
+                <div class="text-2xl font-bold">
+                  <span>Achievement</span>
+                </div>
+                <div class="text-yellow-400 font-bold">
+                  <span>Winner of Job Matching Hackathon at JICA (2023)</span>
+                </div>
+                <div class="text-blue-500">
+                  <span>Team Bigbang</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%]"
+            >
+              <div class="">
+                <div>
+                  <span class="text-2xl font-bold">
+                    <i class="fa-solid fa-school"></i>
+                  </span>
+                </div>
+                <div class="text-2xl font-bold">
+                  <span>Education</span>
+                </div>
+                <div>
+                  <span>Final year of Economics</span>
+                </div>
+                <div>
+                  <span>Yangon Economics University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 font-serif">
+            Hey there! I'm a budding full-stack developer with a knack for
+            collaborative projects and a passion for learning. While I may lack
+            formal job experience, I added my hardwork to a winning team in a
+            Job Matching Hackathon, developing an ERP system for Flavor Wave in
+            just 7 days. Additionally, I contributed to a two-month project
+            creating a web-based Yawgi Management System for Punnyarama
+            Monastery. I thrive on challenges and am eager to continue growing
+            in the world of technology. Let's connect and create something
+            extraordinary together!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience  -->
+    <section class="mt-7 pt-20" id="experience">
+      <div class="text-center">
+        <div class="text-gray-600 font-semibold text-sm">
+          <span>Explore My</span>
+        </div>
+        <div class="text-4xl font-bold text-black">
+          <span>Experience</span>
+        </div>
+      </div>
+      <div class="mt-12 px-7 lg:flex lg:justify-center lg:gap-8">
+        <div class="px-4 py-4">
+          <div class="sm:flex sm:justify-between sm:items-center sm:gap-6">
+            <div
+              class="mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%]"
+            >
+              <div class="text-2xl text-gray-600 font-semibold mb-4">
+                <span> Frontend Development </span>
+              </div>
+              <div class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-html5 text-orange-600 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> HTML </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-css3-alt text-blue-600 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> CSS </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-js text-yellow-400 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Javascript </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-bootstrap text-purple-500 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Bootstrap </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-solid fa-water text-blue-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Tailwind </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-mdb text-blue-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Material UI </span>
+                    </div>
+                    <div class="">
+                      <span> Intermediate </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-vuejs text-green-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> VueJS </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-react text-blue-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> ReactJS </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-b text-orange-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Laravel Blade </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-wordpress text-blue-700 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Wordpress </span>
+                    </div>
+                    <div class="">
+                      <span> Basic </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%]"
+            >
+              <div class="text-2xl text-gray-600 font-semibold mb-4">
+                <span> Backend Development </span>
+              </div>
+              <div class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-php text-blue-700 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> PHP </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-node-js text-green-500 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> NodeJS </span>
+                    </div>
+                    <div class="">
+                      <span> Intermediate </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-brands fa-ubuntu text-orange-700 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Ubuntu </span>
+                    </div>
+                    <div class="">
+                      <span> Intermediate</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-linux text-black text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Linux </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-laravel text-red-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Laravel </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-docker text-blue-600 text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Docker </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-git text-black text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Git </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-brands fa-github text-black text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> Github </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i
+                        class="fa-solid fa-database text-blue-600 text-2xl"
+                      ></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> MySQL </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 mx-8 flex justify-center items-center gap-3">
+                  <div class="">
+                    <span>
+                      <i class="fa-solid fa-cloud text-black text-2xl"></i>
+                    </span>
+                  </div>
+                  <div class="">
+                    <div class="text-lg font-bold">
+                      <span> API </span>
+                    </div>
+                    <div class="">
+                      <span> Experienced </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="mt-7 pt-20" id="projects">
+      <div class="text-center">
+        <div class="text-gray-600 font-semibold text-sm">
+          <span>Browse My</span>
+        </div>
+        <div class="text-4xl font-bold text-black">
+          <span>Recent Projects</span>
+        </div>
+      </div>
+      <div class="px-7">
+        <div class="py-4">
+          <div class="flex flex-wrap justify-center gap-6">
+            <div
+              class="flex flex-col items-center mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%] xl:w-[30%]"
+            >
+              <div class="w-full">
+                <img
+                  src="./images/Screenshot 2023-09-19 212135.png"
+                  alt="Pizza Order System"
+                  class="w-full h-auto rounded-2xl"
+                />
+              </div>
+
+              <div class="mt-4">
+                <span class="text-lg font-semibold">Point Of Sale Project</span>
+              </div>
+              <div class="mb-1">
+                <span class="text-sm font-sans text-gray-500"
+                  >Self Project</span
+                >
+              </div>
+              <div class="my-4 flex justify-center gap-3">
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-black outline-black rounded-full transition-all delay-300 ease-out hover:text-white hover:bg-black"
+                >
+                  <a
+                    href="https://github.com/inhibitor255/MyProject"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-brands fa-github text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-red-600 outline-black rounded-full transition-all delay-300 ease-out hover:bg-red-600 hover:text-white hover:outline-white"
+                >
+                  <a
+                    href="https://youtube.com/playlist?list=PLPSFMqlMBinkCemS2-_594kPTrq0p_ibP&si=mCgvZI_5As32-nOv"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-brands fa-youtube text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%] xl:w-[30%]"
+            >
+              <div class="w-full">
+                <img
+                  src="./images/Screenshot 2024-04-27 173107.png"
+                  alt="Yawgi Management Project"
+                  class="w-full h-auto rounded-2xl"
+                />
+              </div>
+
+              <div class="mt-4">
+                <span class="text-lg font-semibold"
+                  >Yawgi Management Project</span
+                >
+              </div>
+              <div class="mb-1">
+                <span class="text-sm font-sans text-gray-500"
+                  >Team Project</span
+                >
+                <span class="text-blue-500">(Team Bigbang)</span>
+              </div>
+              <div class="my-4 flex justify-center gap-3">
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-black outline-black rounded-full transition-all delay-300 ease-out hover:text-white hover:bg-black"
+                >
+                  <a href="https://punyarrama.com/" target="_blank" class="">
+                    <i
+                      class="fa-solid fa-display text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-blue-600 outline-black rounded-full transition-all delay-300 ease-out hover:bg-blue-600 hover:text-white hover:outline-white"
+                >
+                  <a
+                    href="https://docs.google.com/document/d/1QlgMLKIvMBfWMEHYjBRIjX1jCuodd18LaHHBkDgUsho/edit?usp=sharing"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-regular fa-file-lines text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%] xl:w-[30%]"
+            >
+              <div class="w-full">
+                <img
+                  src="./images/Screenshot 2024-04-29 131951.png"
+                  alt="Laravel React E-commerce"
+                  class="w-full h-auto rounded-2xl"
+                />
+              </div>
+
+              <div class="mt-4">
+                <span class="text-lg font-semibold"
+                  >Laravel React E-commerce Project</span
+                >
+              </div>
+              <div class="mb-1">
+                <span class="text-sm font-sans text-gray-500"
+                  >Self Project</span
+                >
+              </div>
+              <div class="my-4 flex justify-center gap-3">
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-black outline-black rounded-full transition-all delay-300 ease-out hover:text-white hover:bg-black"
+                >
+                  <a
+                    href="https://github.com/inhibitor255/Laravel-React-Ecommerce"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-brands fa-github text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center mt-4 p-4 text-center outline outline-gray-500 outline-2 rounded-3xl sm:w-[48%] xl:w-[30%]"
+            >
+              <div class="w-full">
+                <img
+                  src="./images/Screenshot 2024-04-29 130920.png"
+                  alt="Flavor Wave Project"
+                  class="w-full h-auto rounded-2xl"
+                />
+              </div>
+
+              <div class="mt-4">
+                <span class="text-lg font-semibold"
+                  >Flavor Wave ERP Project</span
+                >
+              </div>
+              <div class="mb-1">
+                <span class="text-sm font-sans text-gray-500"
+                  >Team's Winner Project</span
+                >
+                <span class="text-blue-500">(Team Bigbang)</span>
+              </div>
+              <div class="my-4 flex justify-center gap-3">
+                <div
+                  class="px-10 font-bold py-2 outline outline-2 text-red-600 outline-black rounded-full transition-all delay-300 ease-out hover:bg-red-600 hover:text-white hover:outline-white"
+                >
+                  <a
+                    href="https://youtu.be/uGtXFec6vlg?si=bbUmNbFv417aaLpc"
+                    target="_blank"
+                    class=""
+                  >
+                    <i
+                      class="fa-brands fa-youtube text-2xl hover:animate-pulse"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts -->
+    <section class="text-center mt-52" id="contact">
+      <div class="text-gray-600 font-semibold text-sm">
+        <span> Get In Touch </span>
+      </div>
+      <div class="text-4xl font-bold text-black mb-8">
+        <span> Contact Me </span>
+      </div>
+      <div class="px-7">
+        <div
+          class="max-w-md mx-auto flex flex-wrap gap-2 justify-evenly py-4 px-4 text-center outline outline-gray-500 outline-2 rounded-3xl"
+        >
+          <div class="flex justify-between">
+            <div class="animate-bounce">
+              <a href="mailto:kaungmyatkyaw255@gmail.com" target="_blank">
+                <i
+                  class="fa-solid fa-envelope text-2xl hover:animate-pulse"
+                ></i>
+              </a>
+            </div>
+            <div class="ms-4">
+              <span> kaungmyatkyaw255@gmail.com </span>
+            </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="animate-bounce">
+              <a
+                href="https://www.linkedin.com/in/kaungmyat-kyaw-766572228/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="ms-2">
+              <span> Linkedin </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="">
+      <div class="mt-52">
+        <nav class="">
+          <ul class="flex justify-center flex-wrap gap-4">
+            <li class="px-5 text-2xl"><a href="#about">About</a></li>
+            <li class="px-5 text-2xl">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="px-5 text-2xl"><a href="#projects">Projects</a></li>
+            <li class="px-5 text-2xl"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-center text-gray-500 text-sm py-4 mt-20">
+        Copyright © 2024 Kaung Myat Kyaw. All Rights Reserved
+      </div>
+    </footer>
+    <script src="../public/script.js"></script>
+  </body>
+</html>
