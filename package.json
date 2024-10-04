@@ -5,6 +5,10 @@
   "scripts": {
     "dev": "npm run build:css && tailwindcss build ./src/input.css -o ./public/output.css --watch",
     "build:css": "tailwindcss build ./src/input.css -o ./public/output.css",
-    "build": "npm run build:css"
+    "build": "npm run build:css",
+    "start": "node ./dist/index"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
   }
 }
